@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Train, MapPin, Clock, Route, Zap } from 'lucide-react';
+import { Train, MapPin, Clock, Map, Zap } from 'lucide-react';
 import StationSelector from './components/StationSelector';
 import RouteResult from './components/RouteResult';
 import StationList from './components/StationList';
@@ -69,7 +69,7 @@ function App() {
                       : 'bg-white/60 text-gray-700 hover:bg-white/80'
                   }`}
                 >
-                  <Route className="w-4 h-4 mr-2" />
+                  <Map className="w-4 h-4 mr-2" />
                   Find Route
                 </button>
                 <button
@@ -128,7 +128,7 @@ function App() {
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                     >
-                      <Route className="w-4 h-4 mr-2" />
+                      <Map className="w-4 h-4 mr-2" />
                       Shortest Distance
                     </button>
                     <button

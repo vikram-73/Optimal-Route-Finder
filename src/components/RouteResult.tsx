@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, Route, MapPin, ArrowRight, Train } from 'lucide-react';
+import { Clock, Map, MapPin, ArrowRight, Train } from 'lucide-react';
 
 interface RouteResultProps {
   result: { value: number; path: string[] };
@@ -38,7 +38,7 @@ const RouteResult: React.FC<RouteResultProps> = ({
           <div className="flex items-center text-sm text-gray-600">
             {routeType === 'distance' ? (
               <>
-                <Route className="w-4 h-4 mr-1" />
+                <Map className="w-4 h-4 mr-1" />
                 {result.value} meters
               </>
             ) : (
